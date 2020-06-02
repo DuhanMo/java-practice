@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-public class MemberController  {
+public class MemberController {
     public static final int SIZE = 10;
     private int memberCount;
     private Member[] mem = new Member[SIZE];
@@ -109,24 +109,57 @@ public class MemberController  {
     }
 
     public Member[] sortIdAsc() {
-        Member[] copy = new Member[SIZE];
-        System.arraycopy(copy, 0, mem, 0, mem.length);
+        Member[] copy = new Member[memberCount];
+        System.arraycopy(mem, 0, copy, 0, memberCount);
+        for (int i = 0; i < copy.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (copy[i].getUserId().compareTo(copy[j].getUserId()) < 0) {
+                    Member temp = copy[j];
+                    copy[j] = copy[i];
+                    copy[i] = temp;
+                }
+            }
+        }
 
 
         return copy;
     }
 
 
-//    public Member[] sortIdDesc(){
+    //    public Member[] sortIdDesc(){
 //
 //    }
-//    public Member[] sortAgeAsc(){
-//
-//    }
+    public Member[] sortAgeAsc() {
+        Member[] copy = new Member[memberCount];
+        System.arraycopy(mem, 0, copy, 0, memberCount);
+        for (int i = 0; i < copy.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (copy[i].getAge() - copy[j].getAge() < 0) {
+                    Member temp = copy[j];
+                    copy[j] = copy[i];
+                    copy[i] = temp;
+                }
+            }
+        }
+        return copy;
+    }
+
 //    public Member[] sortAgeDesc(){
 //
 //    }
-//    public Member[] sortGenderDesc(){
-//
-//    }
+    public Member[] sortGenderDesc(){
+        Member[] copy = new Member[memberCount];
+        System.arraycopy(mem, 0, copy, 0, memberCount);
+        for (int i = 0; i < copy.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (copy[i].getGender() == 'M' && copy[j].getGender() =='F') {
+                    Member temp = copy[j];
+                    copy[j] = copy[i];
+                    copy[i] = temp;
+                }
+            }
+        }
+        return copy;
+    }
 }
+

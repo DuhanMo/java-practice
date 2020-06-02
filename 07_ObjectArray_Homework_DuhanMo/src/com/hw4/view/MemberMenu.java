@@ -3,6 +3,7 @@ package com.hw4.view;
 import com.hw4.controller.MemberController;
 import com.hw4.model.vo.Member;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MemberMenu {
@@ -181,8 +182,8 @@ public class MemberMenu {
 
     public void sortMember() {
 
-        Member[] sortMem = null;
-        while(true){
+//
+        while (true) {
             System.out.println("1. 아이디 오름차순 정렬");
             System.out.println("2. 아이디 내림차순 정렬");
             System.out.println("3. 나이 오름차순 정렬");
@@ -192,20 +193,35 @@ public class MemberMenu {
             System.out.print("메뉴 선택 : ");
             int menu = sc.nextInt();
             sc.nextLine();
-            switch (menu){
+
+            if (menu == 9) {
+                System.out.println("이전 메뉴로 돌아갑니다.");
+                return;
+            }
+            Member[] sortMem = null;
+            switch (menu) {
                 case 1:
                     sortMem = mc.sortIdAsc();
-                    for(Member value : sortMem){
-                        System.out.println(value);}
-
-                break;
-                case 2: break;
-                case 3: break;
-                case 4: break;
-                case 5: break;
-                case 9:
-                    return;
-
+                    break;
+                case 2:
+                    /*sortMem = *mc.sortDesc();*/
+                    break;
+                case 3:
+                    sortMem = mc.sortAgeAsc();
+                    break;
+                case 4:
+                    /*sortMem = mc.sortAgeDesc();*/
+                    break;
+                case 5:
+                    sortMem = mc.sortGenderDesc();
+                    break;
+                default:
+                    System.out.println("잘못입력하셨습니다. 다시 입력해주세요.");
+                    break;
+            }
+            System.out.println("========= 정렬결과 =========");
+            for (int i = 0; i < sortMem.length; i++) {
+                System.out.println(sortMem[i].information());
             }
         }
 
