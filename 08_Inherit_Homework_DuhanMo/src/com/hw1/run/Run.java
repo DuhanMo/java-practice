@@ -36,11 +36,13 @@ public class Run {
             String dept = sc.nextLine();
 
             empArr[count] = new Employee(name, age, height, weight, salary, dept);
+
             count++;
             System.out.print("계속 추가하시려면 y 또는 Y를 입력해주세요 : ");
             char ch = sc.next().charAt(0);
             sc.nextLine();
             if(!(ch == 'y' || ch == 'Y')) break;
+            if (count == 10) break;
 
 
         }
