@@ -1,0 +1,22 @@
+package com.kh.example.chap01.condition;
+
+import java.util.Scanner;
+
+public class C_IfElseIf {
+
+	public void method1() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.print("숫자를 한 개 입력하세요 : ");
+		int num = sc.nextInt();
+
+		if (num > 0) {
+			System.out.println("입력하신 숫자는 양수입니다.");
+		}else if(num  == 0) {
+			System.out.println("입력하신 숫자는 0입니다.");
+		}else{
+			System.out.println("입력하신 숫자는 음수입니다.");
+		}
+
+	}
+}

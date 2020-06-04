@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.kh.first.A_MethodPrinter"/>
+<fullyQualifiedTypeName name="com.kh.first.B_ValuePrinter"/>
+<fullyQualifiedTypeName name="com.kh.variable.A_Variable"/>
+<fullyQualifiedTypeName name="com.kh.variable.B_KeyboardInput"/>
+<fullyQualifiedTypeName name="com.kh.variable.C_Constant"/>
+<fullyQualifiedTypeName name="com.kh.practice1.VariablePractice1"/>
+<fullyQualifiedTypeName name="com.kh.practice1.VariablePractice2"/>
+<fullyQualifiedTypeName name="com.kh.practice2.CastingPractice1"/>
+<fullyQualifiedTypeName name="com.kh.practice2.CastingPractice2"/>
+<fullyQualifiedTypeName name="com.kh.practice2.CastingPractice3"/>
+<fullyQualifiedTypeName name="com.kh.variable.G_Printf"/>
+<fullyQualifiedTypeName name="com.kh.operator.A_LogicalNagation"/>
+<fullyQualifiedTypeName name="com.kh.operator.B_InDecrease"/>
+<fullyQualifiedTypeName name="com.kh.operator.C_Arithmetic"/>
+<fullyQualifiedTypeName name="com.kh.operator.D_Comparison"/>
+<fullyQualifiedTypeName name="com.kh.operator.E_Logical"/>
+<fullyQualifiedTypeName name="com.kh.operator.G_Compound"/>
+<fullyQualifiedTypeName name="com.kh.practice.OperatorPractice"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.kh.example.chap01.condition.A_if"/>
+<fullyQualifiedTypeName name="com.kh.example.chap01.condition.C_IfElseIf"/>
+<fullyQualifiedTypeName name="com.kh.practice.ControlPractice"/>
+<fullyQualifiedTypeName name="com.kh.practice.chap02.LoopPractice"/>
+<fullyQualifiedTypeName name="com.kh.example.chap03.branch.B_continue"/>
+<fullyQualifiedTypeName name="com.kh.example.chap01.condition.RockRaperScissors"/>
+<fullyQualifiedTypeName name="com.kh.example.array.A_Array"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

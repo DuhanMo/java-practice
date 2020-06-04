@@ -1,0 +1,18 @@
+package com.kh.practice.chap02;
+
+import java.util.Scanner;
+
+public class LoopPractice {
+	public void practice1() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("정수를 하나 입력하세요 : ");
+		int num = sc.nextInt();
+		int sum = 0;
+		
+		for (int i = 1; i < num+1 ; i++) {
+			sum =+i;
+			System.out.print(i+" + ");
+		}
+		System.out.print(" = " + sum);
+	}
+}

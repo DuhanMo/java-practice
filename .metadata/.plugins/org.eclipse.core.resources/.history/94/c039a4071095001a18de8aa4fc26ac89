@@ -1,0 +1,16 @@
+package com.kh.operator;
+
+public class G_Compound {
+
+	//산술대입연산자 : +=, -=, *=, /=, %=
+	
+	public void method() {
+		int num = 12;
+		System.out.println("num : " + num);
+		
+		//num 변수를 3증가
+		
+		num +=3;
+	}
+	
+}

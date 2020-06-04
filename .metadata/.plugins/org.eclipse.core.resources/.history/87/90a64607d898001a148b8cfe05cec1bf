@@ -1,0 +1,19 @@
+package com.kh.example.chap02.loop;
+
+import java.util.Scanner;
+
+public class C_DoWhile {
+	
+	public void method1() {
+		Scanner sc = new Scanner(System.in);
+		String str = null;
+		
+		do {
+			
+		}while(!str.contentEquals("exit"));
+			
+		}
+		
+	}
+
+}

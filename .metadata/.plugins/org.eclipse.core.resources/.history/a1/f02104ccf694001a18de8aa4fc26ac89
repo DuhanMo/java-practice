@@ -1,0 +1,46 @@
+package com.kh.operator;
+
+public class C_Arithmetic {
+
+	// 계산할 때 쓰이는 연산자
+	public void method1() {
+		int num1 = 10;
+		int num2 = 3;
+
+		System.out.println("num1 + nume2 = " + (num1 + num2)); // 13
+		System.out.println("num1 - nume2 = " + (num1 - num2)); // 7
+		System.out.println("num1 * nume2 = " + (num1 * num2)); // 30
+		// 나누었을 때 몫을 구하는 연산자
+		System.out.println("num1 / nume2 = " + (num1 / num2)); // 3
+		// 나누었을 때 나머지를 구하는 연산자
+		System.out.println("num1 % nume2 = " + (num1 % num2)); // 1
+
+		// 값 % 배수 == 0
+		// 짝수니 ? 값 % 2 == 0 or 값 % 2 != 1
+		// 홀수니 ? 값 % 2 == 1 or 값 % 2 != 0
+
+	}
+
+	public void method2() {
+		double a = 35;
+		double b = 10;
+
+		System.out.println("a = " + a);
+		System.out.println("b = " + b);
+
+		double add = a + b;
+		System.out.println("a + b = " + add);
+
+		double sub = a - b;
+		System.out.println("a - b = " + sub);
+		
+		double mul = a * b;
+		System.out.println("a * b = " + mul);
+		
+		double div = a / b;
+		System.out.println("a / b = " + div);
+		
+
+	}
+
+}

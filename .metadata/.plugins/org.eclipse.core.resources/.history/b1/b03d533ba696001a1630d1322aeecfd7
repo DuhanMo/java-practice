@@ -1,0 +1,23 @@
+package com.kh.example.chap02.loop;
+
+public class B_While {
+
+	public void method1() {
+		int i = 1;
+		while (true) {
+			
+			
+			System.out.println(i);
+			i++;
+			if(i==6)break;
+		}
+	}
+	
+	public void method2() {
+		int i=5;
+		while(i>0) {
+			System.out.println(i);
+			i--;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+package com.kh.operator;
+
+public class C_Arithmetic {
+	
+	//계산할 때 쓰이는 연산자
+	public void method1() {
+		
+	}
+
+}

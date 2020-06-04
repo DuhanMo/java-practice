@@ -1,0 +1,35 @@
+package com.kh.example.chap02.loop;
+
+import java.util.Scanner;
+
+public class C_DoWhile {
+
+	public void method1() {
+		Scanner sc = new Scanner(System.in);
+		String str = null;
+
+		do {
+			System.out.print("문자열 입력 : ");
+			str = sc.next();
+			System.out.println("str : " + str);
+		} while (str.equals("exit"));
+
+	}
+
+	public void method2() {
+		Scanner sc = new Scanner(System.in);
+		String str = null;
+
+		do {
+			System.out.print("문자열 입력 : ");
+			str = sc.next();
+			System.out.println("str : " + str);
+			if (str.contentEquals("exit")) {
+				break;
+			}
+		} while (true);
+	}
+	
+//	public void 
+
+}

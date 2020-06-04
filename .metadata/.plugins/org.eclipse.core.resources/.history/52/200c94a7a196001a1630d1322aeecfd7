@@ -1,0 +1,10 @@
+package com.kh.example.chap02.loop;
+
+public class B_While {
+	
+	public void method1() {
+	while() {
+		
+	}
+	}
+}

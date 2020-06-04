@@ -1,0 +1,11 @@
+package com.kh.example.chap01.condition;
+
+public class D_Switch {
+	
+
+	public void method1() {
+		//정수 두개와 연산기호문자 1개를 입력받아서
+		//연산기호문자에 해당하는 계산을 수행하고 출력하세
+	}
+
+}
