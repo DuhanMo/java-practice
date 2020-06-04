@@ -35,6 +35,9 @@ public class Run {
 
         System.out.println(b1);
         System.out.println(b2);
+        System.out.println("===============");
+        ((Mother)b1).overrideTest();//Mother 클래스에서는 Family의 overrideTest메소드를 오버라이딩 하지 않아서.
+        ((Baby)b2).overrideTest();
 
     }
 
