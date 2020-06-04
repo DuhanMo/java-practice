@@ -1,8 +1,0 @@
-package com.kh.example.chap03.branch;
-
-public class B_continue {
-	//continue문 : 반복문 내에서만 사용할 수 있다.
-	//if(조건식) continue;
-	//continue문 아래의 내용을 실행하지말고
-	//증감식 또는 다음값으로 건너뛰라는 의
-}

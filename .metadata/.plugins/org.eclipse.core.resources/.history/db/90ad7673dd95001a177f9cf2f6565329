@@ -1,8 +1,0 @@
-package com.kh.practice.run;
-
-import com.kh.practice.ControlPractice;
-
-public class Run {
-	ControlPractice a = new ControlPractice();
-	a.method1();
-}

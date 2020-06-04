@@ -13,3 +13,9 @@ out/
 
 .gradle/
 build/
+
+
+*.classpath
+*.project
+.idea/	
+.metadata/
