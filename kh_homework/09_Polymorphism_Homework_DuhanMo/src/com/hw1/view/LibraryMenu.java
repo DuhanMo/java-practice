@@ -68,7 +68,9 @@ public class LibraryMenu {
         String keyword = sc.next();
         Book[] searchList = lm.searchBook(keyword);
         for (Book value : searchList) {
+            if(value == null) break;
             System.out.println(value);
+
         }
     }
 
