@@ -4,6 +4,8 @@ import com.sun.org.apache.xerces.internal.xs.XSIDCDefinition;
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 import org.w3c.dom.ls.LSOutput;
 
+import java.util.StringTokenizer;
+
 public class StringTest {
     /*
      *
@@ -81,6 +83,89 @@ public class StringTest {
         for (int i = 0; i < strArr.length; i++) {
             System.out.println(strArr[i]);
         }
+        // StringTokenizer
+        // java.util 에 존재
+        // split과 둘의 차이점이라고 한다면 split은 String 클래스의 메소드로 추출한 문자를 배열로 저장하고,
+        // StringTokenizer 은 메소드가 아니라 java.util에 포함되어 있는 자체 클래스이다.
+        // countToken, nextToker, hasMoreTokens
+        // countToken : 메소드로 토큰 수 파악
+        // nextToken : 토큰 읽어오기
+        // hasMoreTokens : 토큰이 남아있는지 확인후 nextToken 으로 토큰을 읽어온다.
+
+
+        String strToken = "모두한,22,인천 연수구 청학동,남";
+        StringTokenizer st = new StringTokenizer(strToken, ",");
+        System.out.println(st.countTokens());
+        while (st.hasMoreTokens()) {
+            System.out.println(st.nextToken());
+        }
+
+        // join()
+        // 특정 문자열 배열을 하나의 문자열로 만들어주는 메소드
+        // 원본은 변하지 않고 별도의 사본을 만들어 실행한다
+        System.out.println(String.join("/", strArr));
     }
+
+    public void method3() {
+        // HelloWorld
+        // H
+        // He
+        // Hel
+        // Hell
+        // ...
+        // 별도의 임의의 임시공간 (buffer)을 만들어서
+        //문자열변경과정을 다 처리한 결과만을 문자열 저장소에 반환하는 클래스를 제공하는데
+        // StringBuffer / StringBuilder
+        // StringBuffer에서는 동시제어에 대한 Thread Safe 기능을 제공하는데
+        // StringBuilder는 제공을 하지 않는다.
+        String strTmp = "H";
+        System.out.println(strTmp.hashCode());
+        strTmp += "ello";
+        System.out.println(strTmp.hashCode());
+
+
+        StringBuffer buf = new StringBuffer();
+        System.out.println(buf.hashCode());
+
+        buf.append("H");
+        System.out.println(buf.hashCode());
+        buf.append("ello");
+        System.out.println(buf.hashCode());
+
+        String str1 = buf.toString();
+
+        System.out.println(str1);
+        System.out.println(str1.hashCode());
+        System.out.println("==============");
+        String str = "반가워";
+        System.out.println("str 기존 : " +str + ", 주소 : "+str.hashCode());
+        str += "난 string 이라고 해";
+        System.out.println("str 추가 후 : " +str + ", 주소 : "+str.hashCode());
+
+        StringBuffer sbf = new StringBuffer( "안녕!");
+        System.out.println("sbf.capacity() : " + sbf.capacity());
+        System.out.println("sbf.length() : " + sbf.length());
+        System.out.println("sbf 기존 : " + sbf + ", 주소  : " + sbf.hashCode());
+        sbf.append("난 StringBuffer야 ");
+        System.out.println("sbf 추가 : " + sbf + ", 주소후 : " + sbf.hashCode());
+        System.out.println("sbf.capacity() : " + sbf.capacity());
+
+        StringBuilder sbd = new StringBuilder("안녕!!!");
+        System.out.println(sbd.capacity());
+        System.out.println("sbd 기존 : " + sbd + ", 주소  : " + sbd.hashCode());
+        sbd.append("난 StringBuilder야");
+        System.out.println("sbd 추가 후 : " + sbd + ", 주소  : " + sbd.hashCode());
+
+        sbd.append("내가 따라간다.").append("나도 따라간다.");
+        System.out.println(sbd);
+
+        sbd.insert(2,"배가고파요");
+        System.out.println(sbd);
+        sbd.delete(0,7);
+        System.out.println(sbd);
+    }
+
+
+
 
 }
