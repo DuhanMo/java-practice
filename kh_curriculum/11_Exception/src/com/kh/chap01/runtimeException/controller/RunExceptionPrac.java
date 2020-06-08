@@ -1,5 +1,7 @@
 package com.kh.chap01.runtimeException.controller;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import java.util.Scanner;
 
 public class RunExceptionPrac {
@@ -37,6 +39,8 @@ public class RunExceptionPrac {
     //  - try-catch문 : 정상적인 흐름에서 예외상황이  발생할 수 있는 지역에 한해서 예외처리를 해서 예외상황시 어떻게 할지 결정
     //      a. try블록 안은 하나의 일의 단위(트랜잭션)이다.
     //      b. catch블럭의 () 안은 try블록 안에서 발생한 에외 클래스의 인스턴스 참조변수가 넘어온다.
+    //      c. finally는 에외 상황이 발생해서 해당 catch문에서 return을 선언하더라도 finally는 처리하고 넘어간다.
+    //         주로 java.io(스트림닫을때)
 
     //        (catch블록은 범위가 작은것부터 써주어야 의미가 있다. 그렇지 않으면 범위가 큰 에외클래스에 의해 모든 에외처리가 해당되므로)
     Scanner sc = new Scanner(System.in);
@@ -53,7 +57,47 @@ public class RunExceptionPrac {
 //            System.out.printf("%d/ %d = %.2f\n", ran, inputNum, result);
 //        }
 
+        // 2. try-catch로 처리
+        try {
+            System.out.println("제수를 하나의 정수로 입력하시오.");
+            int inputNum = sc.nextInt();
+            ran = (int) (Math.random() * 10) + 1;
+            result = ran / inputNum;
+            System.out.printf("%d/ %d = %.2f\n", ran, inputNum, result);
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+            return; // 무조건 finally 를 거쳐서 return 실행
+        } finally {
+            System.out.println("진짜실행되나 ");
+        }
 
+    }
+
+    public void ClassNArrayEx() {
+        try {
+//            Object obj = new int[10];
+//            System.out.println(obj);
+//            String str = (String)obj;
+//            System.out.println(str);
+
+            // ArrayIndexOutOfBoundsException
+//            int[] arr = new int[2];
+//            arr[0] = 1;
+//            arr[1] = 2;
+//            arr[2] = 3;
+            String str = null;
+            int length = str.length();
+//        }catch (ClassCastException e){ // 다중catch
+//            e.printStackTrace();
+//        }catch (ArrayIndexOutOfBoundsException e){
+//            System.out.println("배열 범위를 넘어가서 발생하는 예외처리");
+//        }catch (NullPointerException e){
+//            System.out.println("널입니다");
+//        }
+            //java 7버전부터 이렇게도 가능하다. 이전 버전은 ㄴㄴ
+        } catch (ClassCastException | ArrayIndexOutOfBoundsException | NullPointerException e) {
+            e.printStackTrace();
+        }
 
     }
 }
