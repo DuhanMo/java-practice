@@ -1,7 +1,7 @@
 package com.kh.chap02.throwPrac.controller;
 
 
-public class ThrowTest {
+public class ThrowsTest {
     // throws : 예외가 발생하면 예외 클래스의 참조변수를 호출한 곳으로 넘기게 되고 에외처리는 하지 않는 것이다.
     //        : 계속 throws로 넘기다가 Main 함수에서 마저도 jvm으로 throws를 할 수 있다.
     //          -jvm 까지 throws로 넘겼을 때
