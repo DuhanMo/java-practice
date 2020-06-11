@@ -12,7 +12,7 @@ import com.kh.list.sort.Product;
 public class Run {
 	public static void main(String[] args) {
 		TestList tl = new TestList();
-		tl.method1();
+//		tl.method1();
 		
 		
 		// 객체리스트 정렬 테스트
@@ -21,33 +21,33 @@ public class Run {
 		list.add(new Product("iPhone",800000,0.02));
 		list.add(new Product("Gallaxy",700000,0.01));
 		System.out.println("list : " + list);
-		
+
 		for(Object obj: list) {
 			System.out.println(obj);
 		}
-		
+
 		// price 기준으로 오름차순
 		list.sort(new AscPriceSort());
 		System.out.println("======= ASC ================");
 		for(Object obj: list) {
 			System.out.println(obj);
 		}
-		
-		
+
+
 		// price 기준으로 내림차순
 		list.sort(new DescPriceSort());
 		System.out.println("========DESC===============");
 		for(Object obj: list) {
 			System.out.println(obj);
 		}
-		
+
 		// AscNameSort
 		list.sort(new AscNameSort());
 		System.out.println("=======================");
 		for(Object obj: list) {
 			System.out.println(obj);
 		}
-		
+
 		// DescNameSort
 		list.sort(new DescNameSort());
 		System.out.println("=======================");

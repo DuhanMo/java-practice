@@ -14,6 +14,7 @@ public class TestHashSet {
 	
 	public void method1() {
 		// HashSet 테스트
+
 		HashSet hset = new HashSet();
 		
 		// 다형성 적용한 생성

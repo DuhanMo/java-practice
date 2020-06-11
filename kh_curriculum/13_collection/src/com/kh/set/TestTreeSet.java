@@ -25,7 +25,7 @@ public class TestTreeSet {
 		// 1. Object[] 배열로 만들어서 꺼내는 방법
 		Object[] arr = tset.toArray();
 		for (int i = 0; i < arr.length; i++) {
-			System.out.println((String)arr[i]);
+			System.out.println((String) arr[i]);
 		}
 		
 		

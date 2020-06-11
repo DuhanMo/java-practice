@@ -7,9 +7,9 @@ import com.kh.set.TestTreeSet;
 public class Run {
 	public static void main(String[] args) {
 		TestHashSet ths = new TestHashSet();
-		//ths.method1();
+//		ths.method1();
 		TestLinkedSet tls = new TestLinkedSet();
-		//tls.method1();
+//		tls.method1();
 		TestTreeSet tts = new TestTreeSet();
 		tts.method1();
 	}

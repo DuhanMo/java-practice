@@ -21,6 +21,7 @@ public class TestHashMap {
 		hmap.put("one", new Date());
 		hmap.put("two","안녕하세요");
 		hmap.put("three", 12345);
+//		hmap.put("one", true);
 		
 		System.out.println("hmap : " + hmap + "\n : " + hmap.get("one"));
 	}
