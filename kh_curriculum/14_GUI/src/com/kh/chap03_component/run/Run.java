@@ -12,6 +12,8 @@ public class Run {
 //        TextFieldTest tt = new TextFieldTest();
 //        tt.textFieldTest();
 //        new TextAreaTest().textAreaTest();
-        new RadioButtonTest();
+//        new RadioButtonTest();
+//        new CheckBoxTest();
+        new ComboBoxTest();
     }
 }
