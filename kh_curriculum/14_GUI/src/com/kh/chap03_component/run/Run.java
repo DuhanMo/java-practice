@@ -14,6 +14,8 @@ public class Run {
 //        new TextAreaTest().textAreaTest();
 //        new RadioButtonTest();
 //        new CheckBoxTest();
-        new ComboBoxTest();
+//        new ComboBoxTest();
+       new DialogTest();
+
     }
 }
