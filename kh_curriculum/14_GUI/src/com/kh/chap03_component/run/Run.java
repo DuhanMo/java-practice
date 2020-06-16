@@ -1,9 +1,6 @@
 package com.kh.chap03_component.run;
 
-import com.kh.chap03_component.view.ImageIconTest;
-import com.kh.chap03_component.view.TextAreaTest;
-import com.kh.chap03_component.view.TextFieldTest;
-import com.kh.chap03_component.view.TextTest;
+import com.kh.chap03_component.view.*;
 
 import java.awt.*;
 
@@ -14,6 +11,7 @@ public class Run {
 //        tt.loginFrame();
 //        TextFieldTest tt = new TextFieldTest();
 //        tt.textFieldTest();
-        new TextAreaTest().textAreaTest();
+//        new TextAreaTest().textAreaTest();
+        new RadioButtonTest();
     }
 }
