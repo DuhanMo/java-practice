@@ -9,13 +9,13 @@ public class Run {
 //        ImageIconTest iit = new ImageIconTest();
 //        TextTest tt = new TextTest();
 //        tt.loginFrame();
-//        TextFieldTest tt = new TextFieldTest();
-//        tt.textFieldTest();
+        TextFieldTest tt = new TextFieldTest();
+        tt.textFieldTest();
 //        new TextAreaTest().textAreaTest();
 //        new RadioButtonTest();
 //        new CheckBoxTest();
 //        new ComboBoxTest();
-       new DialogTest();
+//       new DialogTest();
 
     }
 }

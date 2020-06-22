@@ -6,9 +6,9 @@ public class Run {
     public static void main(String[] args) {
 //        MouseEventTest met = new MouseEventTest();
 //        MouseAdapterTest mat = new MouseAdapterTest();
-//        KeyEventTest ket = new KeyEventTest();
+        KeyEventTest ket = new KeyEventTest();
 //        AnonymousClassTest act = new AnonymousClassTest();
 //        InnerClassTest ict = new InnerClassTest();
-        OuterClassTest oct = new OuterClassTest();
+//        OuterClassTest oct = new OuterClassTest();
     }
 }

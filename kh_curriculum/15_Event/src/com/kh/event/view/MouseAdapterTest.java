@@ -2,9 +2,7 @@ package com.kh.event.view;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
 
 public class MouseAdapterTest extends JFrame {
     public MouseAdapterTest() {
@@ -25,6 +23,18 @@ public class MouseAdapterTest extends JFrame {
 //        btn.setBackground(Color.RED);
 
         // 이벤트 추가
+        btn.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                super.keyTyped(e);
+            }
+        });
+        btn.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseDragged(MouseEvent e) {
+                super.mouseDragged(e);
+            }
+        });
         btn.addMouseListener(new MouseListener() {
             int count = 0;
 

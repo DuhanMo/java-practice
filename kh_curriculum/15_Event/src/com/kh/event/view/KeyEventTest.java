@@ -42,14 +42,15 @@ public class KeyEventTest extends JFrame implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         // 키보드 눌럿을 때
-        //display("keyPressed Event",e); //한글안됨
+        display("keyPressed Event",e); //한글안됨
+        sampleMyEvent();
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
         //키보드에서 손을 땟을 떄
-        display("keyPressed Event", e);
-        sampleMyEvent();
+//        display("keyPressed Event", e);
+//        sampleMyEvent();
     }
 
     // 실행 확인을 위한 이벤트 상태 출력 메소드
